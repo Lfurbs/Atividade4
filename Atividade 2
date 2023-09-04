@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <math.h>
+
+main(){
+
+    //Atividade 2
+
+    int A = 10, B = 11, C = 13, D = 15;
+
+    //A é o maior
+    if(A > B && A > C && A > D){
+        printf("A e o maior");
+        if(B < C && B < D){
+            printf("\nB e o menor");
+
+        }else if(C < B && C< D){
+            printf("\nC e o menor");
+        }else{
+            printf("\nD e o menor");
+        }
+
+    //B é o maior
+    }else if(B > A && B > C && B > D){
+        printf("B e o maior");
+        if(C < A && A < D){
+            printf("\nA e o menor");
+
+        }else if(C < A && C < D){
+            printf("\nC e o menor");
+        }else{
+            printf("\nD e o menor");
+        }
+
+    //C é o maior
+    }else if(C > A && C > B && C > D){
+        printf("C e o maior");
+        if(A < B && A < D){
+            printf("\nB e o menor");
+
+        }else if(A < A && B < D){
+            printf("\nA e o menor");
+        }else{
+            printf("\nD e o menor");
+        }
+
+        //D é o maior
+        }else
+        printf("D e o maior");
+        if(A < B && A < C){
+            printf("\nA e o menor");
+        }else if(B < A && B <C){
+            printf("\nB e o menor");
+        }else{
+            printf("\nC e o menor");
+        }
+}
